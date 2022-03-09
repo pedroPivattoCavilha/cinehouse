@@ -1,7 +1,7 @@
-# CineHouse
+## CineHouse
 Projeto criado no módulo Node.js do curso de Fullstack
-# Linguagem
+## Linguagem
 JavaScript
-# Conteúdos abordados
+## Conteúdos abordados
 -Manipulação de arrays
 -Funções
