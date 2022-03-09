@@ -67,8 +67,4 @@ function alterarStatusEmCartaz(codigo) {
         console.log("Novo status:", catalogo[indice].emCartaz);
         return;
     } 
-   //Caso não tenha achado a informação
-    else {
-        return;
-    }
 }
