@@ -48,7 +48,6 @@ function alterarStatusEmCartaz(codigo) {
     for (let i=0; i<catalogo.length; i++) {
         if (catalogo[i].codigo == codigo) {
             catalogo[i].emCartaz ? catalogo[i].emCartaz = false : catalogo[i].emCartaz = true;
-            console.log("Novo status:", catalogo[i].emCartaz);
         }
     }
 }
