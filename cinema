@@ -35,36 +35,20 @@ function adicionarFilme(codigo, titulo, duracao, atores, anoDeLancamento, emCart
 
 //Buscar um filme do catálogo
 function buscarFilme (codigo) {
-    let  indice=-1;
-  
-  //Procura no array pela informação
-    for (let i = 0; i< catalogo.length; i++) {
+    for (let i=0; i<catalogo.length; i++) {
         if (catalogo[i].codigo == codigo) {
-            indice = i;
+            return catalogo[i];
         }
     }
- //Caso tenha achado a informação
-    if (indice != -1) {
-        console.log('Código do filme: ', indice);
-        return indice;
-    }
-   //Caso não tenha achado a informação
-    else {
-        console.log('Filme não encontrado');
-        return -1;
-    }
+    return undefined;
 }
 
 //Alterar status de um filme
 function alterarStatusEmCartaz(codigo) {
-  
-  //Procura o indice do filme
-  let indice = buscarFilme(codigo);
-  
-    //Caso tenha achado a informação
-    if(indice != -1) {
-        catalogo[indice].emCartaz ? catalogo[indice].emCartaz = false : catalogo[indice].emCartaz = true;
-        console.log("Novo status:", catalogo[indice].emCartaz);
-        return;
-    } 
+    for (let i=0; i<catalogo.length; i++) {
+        if (catalogo[i].codigo == codigo) {
+            catalogo[i].emCartaz ? catalogo[i].emCartaz = false : catalogo[i].emCartaz = true;
+            console.log("Novo status:", catalogo[i].emCartaz);
+        }
+    }
 }
