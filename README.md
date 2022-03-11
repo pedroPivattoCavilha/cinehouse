@@ -1,4 +1,4 @@
-<h1 align="center"> CineHouse </h1>
+<p align="center"> #CineHouse </p>
 Projeto criado no módulo Node.js do curso de Fullstack
 ## Linguagem
 JavaScript
